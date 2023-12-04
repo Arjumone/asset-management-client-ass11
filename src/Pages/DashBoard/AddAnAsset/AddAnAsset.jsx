@@ -10,10 +10,10 @@ const AddAnAsset = () => {
     const productName = form.productName.value;
     const productType = form.productType.value;
     const productQuantity = form.productQuantity.value;
-    const userName = form.userName.value; // Assuming there's an input field for user name
-    const userEmail = form.userEmail.value; // Assuming there's an input field for user email
+    const userName = form.userName.value; 
+    const userEmail = form.userEmail.value; 
 
-    const currentDate = new Date(); // Get the current date and time
+    const currentDate = new Date();
     const assetInfo = {
       productName,
       productType,
@@ -22,7 +22,7 @@ const AddAnAsset = () => {
         name: userName,
         email: userEmail
       },
-      dateAdded: currentDate.toISOString() // Include the current date in ISO format
+      dateAdded: currentDate.toISOString()
     };
 
     axiosPublic.post("/assets", assetInfo)

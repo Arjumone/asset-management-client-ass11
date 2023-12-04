@@ -5,7 +5,6 @@ import Login from "../Pages/Login/Login";
 import JoinAsAdmin from "../Pages/JoinAsAdmin/JoinAsAdmin";
 import JoinAsEmployee from "../Pages/JoinAsEmployee/JoinAsEmployee";
 import AdminDashBoard from "../Layout/AdminDashBoard";
-// import Logo from "../Pages/DashBoard/Logo/Logo";
 import AssetList from "../Pages/DashBoard/AssetsList/AssetsList";
 import AddAnAsset from "../Pages/DashBoard/AddAnAsset/AddAnAsset";
 import AllRequests from "../Pages/DashBoard/AllRequests/AllRequests";
@@ -22,7 +21,6 @@ import RequestForAnAsset from "../Pages/DashBoardEmployee/RequestForAnAsset/Requ
 import MakeACustomRequest from "../Pages/DashBoardEmployee/MakeACustomRequest/MakeACustomRequest";
 import EmployeeProfile from "../Pages/DashBoardEmployee/EmployeeProfile/EmployeeProfile";
 import AdminHome from "../Pages/DashBoard/AdminHome/AdminHome";
-// import EmployeeLogo from "../Pages/DashBoardEmployee/EmployeeLogo/EmployeeLogo";
 
 const router = createBrowserRouter([
   {
@@ -56,10 +54,6 @@ const router = createBrowserRouter([
     path: "adminDashboard/adminHome",
     element: <AdminDashBoard></AdminDashBoard>,
     children: [
-      // {
-      //   path: "logo",
-      //   element: <Logo></Logo>,
-      // },
       {
         path: "adminHome",
         element: <AdminHome></AdminHome>,
@@ -98,10 +92,6 @@ const router = createBrowserRouter([
     path:"employeeDashboard/employeeLogo",
     element:<EmployeeDashBoard></EmployeeDashBoard>,
     children:[
-      // {
-      //   path: "employeeLogo",
-      //   element: <EmployeeLogo></EmployeeLogo>,
-      // },
       {
         path:'employeeHome',
         element:<EmployeeHome></EmployeeHome>

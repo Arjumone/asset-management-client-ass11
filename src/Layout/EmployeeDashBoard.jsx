@@ -1,5 +1,4 @@
 import { NavLink, Outlet } from "react-router-dom"
-// import Logo from "../Pages/DashBoard/Logo/Logo";
 import EmployeeLogo from "../Pages/DashBoardEmployee/EmployeeLogo/EmployeeLogo";
   
   const EmployeeDashBoard = () => {

@@ -1,9 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom"
 import Logo from "../Pages/DashBoard/Logo/Logo";
-// import useAdmin from "../../src/hooks/useAdmin";
   
   const AdminDashBoard = () => {
-    // const [isAdmin] = useAdmin();
     const navLinks = (
       <>
         <NavLink to="/adminHome" className={"active:backdrop-brightness-150 text-xl"} >

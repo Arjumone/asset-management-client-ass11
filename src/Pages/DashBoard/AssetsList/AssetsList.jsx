@@ -20,7 +20,7 @@ const AssetsList = () => {
   }, [axiosPublic]);
 
   const filteredAssets = assets
-    // .filter(asset => asset.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter(asset => asset.name.toLowerCase().includes(searchQuery.toLowerCase()))
     .filter(asset => filterOptions.stockStatus ? asset.stockStatus === filterOptions.stockStatus : true)
     .filter(asset => filterOptions.assetType ? asset.assetType === filterOptions.assetType : true)
     .sort((a, b) => sortOption === 'quantity' ? a.productQuantity - b.productQuantity : 0);

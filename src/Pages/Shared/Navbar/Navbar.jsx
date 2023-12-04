@@ -26,22 +26,6 @@ const Navbar = () => {
       <NavLink to="/admin"className={"active:backdrop-brightness-150"}>
         <li>Join As Admin</li>
       </NavLink>
-      {/* <NavLink to="/menu">
-        <li>Our Menu</li>
-      </NavLink>
-      <NavLink to="/order/salad">
-        <li>Order Food</li>
-      </NavLink> */}
-      {/* <NavLink to="/">
-        <li>
-          <Link to="/dashboard/cart">
-          <button className="btn">
-            <FaShoppingCart className=" text-2xl"></FaShoppingCart>
-            <div className="badge badge-secondary">+{cart.length}</div>
-          </button>
-          </Link>
-        </li>
-      </NavLink> */}
 
      
     </>
