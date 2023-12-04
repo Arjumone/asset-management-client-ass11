@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const AddAnAsset = () => {
   const {user} = useAuth()
@@ -28,7 +29,16 @@ const AddAnAsset = () => {
 
     axiosPublic.post("/assetItems", assetInfo)
       .then(res => {
-        console.log(res.data);
+       
+        if(res.data.insertedId){
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "User created successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
         
       })
       .catch(err => {

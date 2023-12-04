@@ -21,7 +21,7 @@ const EmployeeHome = () => {
         <div>
             <h2 className=" text-center my-3 font-bold ">Welcome  {user.displayName}</h2>
 
-            {/* My Custom Requests Section */}
+          
             <h3 className=" text-center text-3xl font-bold my-4">My Custom Requests</h3>
             {customRequests.length > 0 ? (
                 <ul className=" grid grid-cols-1 lg:grid-cols-5 gap-6">

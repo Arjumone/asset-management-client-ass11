@@ -4,7 +4,7 @@ import Logo from "../Pages/DashBoard/Logo/Logo";
   const AdminDashBoard = () => {
     const navLinks = (
       <>
-        <NavLink to="/adminHome" className={"active:backdrop-brightness-150 text-xl"} >
+        <NavLink to="adminHome" className={"active:backdrop-brightness-150 text-xl"} >
           <li>Home</li>
         </NavLink>
         <NavLink to="assetList"className={"active:backdrop-brightness-150 text-xl"}>

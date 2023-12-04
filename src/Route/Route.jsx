@@ -7,7 +7,7 @@ import JoinAsEmployee from "../Pages/JoinAsEmployee/JoinAsEmployee";
 import AdminDashBoard from "../Layout/AdminDashBoard";
 import AssetList from "../Pages/DashBoard/AssetsList/AssetsList";
 import AddAnAsset from "../Pages/DashBoard/AddAnAsset/AddAnAsset";
-import AllRequests from "../Pages/DashBoard/AllRequests/AllRequests";
+// import AllRequests from "../Pages/DashBoard/AllRequests/AllRequests";
 import CustomRequestsList from "../Pages/DashBoard/CustomRequestsList/CustomRequestsList";
 import MyEmployeeList from "../Pages/DashBoard/MyEmployeeList/MyEmployeeList";
 import AddAnEmployee from "../Pages/DashBoard/AddAnEmployee/AddAnEmployee";
@@ -21,6 +21,7 @@ import RequestForAnAsset from "../Pages/DashBoardEmployee/RequestForAnAsset/Requ
 import MakeACustomRequest from "../Pages/DashBoardEmployee/MakeACustomRequest/MakeACustomRequest";
 import EmployeeProfile from "../Pages/DashBoardEmployee/EmployeeProfile/EmployeeProfile";
 import AdminHome from "../Pages/DashBoard/AdminHome/AdminHome";
+import AllRequests from "../Pages/DashBoard/AllRequests/AllRequests";
 
 const router = createBrowserRouter([
   {
