@@ -2,7 +2,7 @@ import axios from "axios";
 
 
  const axiosSecure = axios.create({
-    baseURL:'https://asset-management-system-server-sigma.vercel.app'
+    baseURL:'http://localhost:5000'
 })
 
 const useAxiosSecure = () => {

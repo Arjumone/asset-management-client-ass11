@@ -57,7 +57,7 @@ const JoinAsAdmin = () => {
       <Helmet>
         <title>Asset || Sign Up</title>
       </Helmet>
-      <div className="card flex-shrink-0 shadow-2xl bg-base-100 w-full">
+      <div className="card flex-shrink-0 shadow-2xl bg-base-100 w-full pt-20">
         <form onSubmit={handleSubmit} className="card-body">
           {/* full name and company name */}
           <div className=" flex gap-2">
