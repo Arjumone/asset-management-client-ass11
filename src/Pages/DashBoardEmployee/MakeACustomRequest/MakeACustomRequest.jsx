@@ -14,32 +14,37 @@ const MakeACustomRequest = () => {
         setAssetItems(response.data);
       })
       .catch(error => {
-        console.error('Error fetching asset items', error);
+        console.error( error);
       });
   }, [axiosPublic]);
 
   const handleRequestAsset = (assetId) => {
-    console.log(assetId);
-    const requestData = {
+    const request = {
       assetId: assetId,
       whyYouNeedThis: whyYouNeedThis,
       additionalInformation: additionalInformation,
-      requestDate: new Date().toISOString()
+      requestDate: new Date().toISOString(),
+      assetDetails: {
+        name: selectedAsset.asset_name,
+        price: selectedAsset.asset_price,
+        type: selectedAsset.asset_type,
+        quantity: selectedAsset.asset_quantity,
+        availability: selectedAsset.availability
+      }
     };
-    console.log(requestData);
+    console.log(request);
 
-    axiosPublic.post('/requests', requestData)
+    axiosPublic.post('/itemRequest', request)
       .then(response => {
-        console.log(response.data); 
+        console.log( response.data);
       })
       .catch(error => {
-        console.error('Error storing the request', error);
+        console.error( error);
       });
   };
 
   const handleAssetSelect = (assetName) => {
     const selected = assetItems.find(asset => asset.asset_name === assetName);
-    // console.log(selected);
     setSelectedAsset(selected);
   };
 

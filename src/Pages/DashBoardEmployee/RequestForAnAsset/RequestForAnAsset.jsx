@@ -43,11 +43,6 @@ const RequestForAnAsset = () => {
     if (assets.availability === 'out_of_stock') {
       return;
     }
-    // const selected = assets?.find(asset => asset._id == _id);
-    // console.log(selected);
-    // setSelectedAsset(selected);
-    // // console.log(assets);
-    // console.log(_id,availability);
   
 
   return (
