@@ -1,0 +1,98 @@
+ [
+  {
+    "_id": 1,
+    "asset_name": "laptop",
+    "asset_type": "returnable",
+    "asset_quantity": 5,
+    "availability": "available",
+    "asset_price": 799.99
+  },
+  {
+    "_id": 2,
+    "asset_name": "cell phone",
+    "asset_type": "returnable",
+    "asset_quantity": 10,
+    "availability": "out_of_stock",
+    "asset_price": 499.99
+  },
+  {
+    "_id": 3,
+    "asset_name": "keyboard",
+    "asset_type": "returnable",
+    "asset_quantity": 8,
+    "availability": "available",
+    "asset_price": 49.99
+  },
+  {
+    "_id": 4,
+    "asset_name": "pens",
+    "asset_type": "non_returnable",
+    "asset_quantity": 15,
+    "availability": "available",
+    "asset_price": 2.99
+  },
+  {
+    "_id": 5,
+    "asset_name": "chair",
+    "asset_type": "returnable",
+    "asset_quantity": 3,
+    "availability": "out_of_stock",
+    "asset_price": 199.99
+  },
+  {
+    "_id": 6,
+    "asset_name": "paper",
+    "asset_type": "non_returnable",
+    "asset_quantity": 20,
+    "availability": "available",
+    "asset_price": 9.99
+  },
+  {
+    "_id": 7,
+    "asset_name": "mouse",
+    "asset_type": "returnable",
+    "asset_quantity": 6,
+    "availability": "available",
+    "asset_price": 29.99
+  },
+  {
+    "_id": 8,
+    "asset_name": "diaries",
+    "asset_type": "non_returnable",
+    "asset_quantity": 12,
+    "availability": "available",
+    "asset_price": 14.99
+  },
+  {
+    "_id": 9,
+    "asset_name": "tissue paper",
+    "asset_type": "non_returnable",
+    "asset_quantity": 25,
+    "availability": "out_of_stock",
+    "asset_price": 4.99
+  },
+  {
+    "_id": 10,
+    "asset_name": "desk",
+    "asset_type": "returnable",
+    "asset_quantity": 2,
+    "availability": "available",
+    "asset_price": 299.99
+  },
+  {
+    "_id": 11,
+    "asset_name": "pencils",
+    "asset_type": "non_returnable",
+    "asset_quantity": 18,
+    "availability": "available",
+    "asset_price": 3.99
+  },
+  {
+    "_id": 12,
+    "asset_name": "keyboard",
+    "asset_type": "returnable",
+    "asset_quantity": 7,
+    "availability": "out_of_stock",
+    "asset_price": 39.99
+  }
+]
