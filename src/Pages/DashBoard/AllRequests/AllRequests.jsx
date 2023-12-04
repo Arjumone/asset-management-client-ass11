@@ -1,59 +1,43 @@
-
-
-// import { useState, useEffect } from 'react';
-// import axios from 'axios';
-
-// const AllRequests = () => {
-//   const [searchQuery, setSearchQuery] = useState('');
-//   const [requests, setRequests] = useState([]);
-
-//   useEffect(() => {
-//     axios.get(`/requests?searchQuery=${searchQuery}`)
-//       .then(response => {
-//         setRequests(response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching requests', error);
-//       });
-//   }, [searchQuery]);
-
-//   const handleSearch = (e) => {
-//     setSearchQuery(e.target.value);
-//   };
-
-//   return (
-//     <div>
-//       <h2>Request List</h2>
-//       <input type="text" placeholder="Search by requester name or email" onChange={handleSearch} />
-//       <ul>
-//         {requests.map(request => (
-//           <li key={request.id}>
-//             <p>Asset Name: {request.assetName}</p>
-//             <p>Asset Type: {request.assetType}</p>
-//             <p>Email of requester: {request.requesterEmail}</p>
-//             <p>Name of requester: {request.requesterName}</p>
-//             <p>Request Date: {request.requestDate}</p>
-//             <p>Additional note: {request.additionalNote}</p>
-//             <p>Status: {request.status}</p>
-//             <button>Approve</button>
-//             <button>Reject</button>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default AllRequests;
-
-
+import { useState, useEffect } from 'react';
+import useAxiosPublic from '../../../hooks/useAxiosPublic';
 
 const AllRequests = () => {
-    return (
-        <div>
-            req
-        </div>
-    );
+    const axiosPublic = useAxiosPublic()
+  const [requests, setRequests] = useState([]);
+  console.log(requests);
+
+  useEffect(() => {
+    axiosPublic.get("/requests")
+      .then(response => {
+        console.log(response.data);
+        setRequests(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, [axiosPublic]);
+
+//   const handleSearch = (e) => {
+   
+//   };
+
+  return (
+    <div>
+      <h2 className=' text-2xl font-bold my-3'>Request List</h2>
+      {/* <input type="text" placeholder="Search by requester name or email" onChange={handleSearch} /> */}
+      <ul>
+        {requests.map(request => (
+          <li key={request.id}>
+            <p>Email of requester: {request.userEmail}</p>
+            <p>Request Date: {request.requestDate}</p>
+            <p>Additional note: {request.additionalNotes}</p>
+            <button className=' btn mr-5 bg-red-200'>Approve</button>
+            <button className=' btn bg-red-200'>Reject</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default AllRequests;
