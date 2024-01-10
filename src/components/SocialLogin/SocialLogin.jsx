@@ -1,40 +1,30 @@
+import { useContext } from "react";
 import { FaGoogle } from "react-icons/fa";
-import useAuth from "../../hooks/useAuth";
-import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { AuthContext } from "../../Provider/Authprovider";
 import { useNavigate } from "react-router-dom";
 
-const SocialLogin = () => {
-    const {googleSignIn} = useAuth();
-    const axiosPublic = useAxiosPublic();
-    const navigate = useNavigate()
 
-    const handleGoogleSignIn=()=>{
-        googleSignIn()
-        .then(result=>{
-            console.log(result.user);
-            const userInfo = {
-                email:result.user?.email,
-                name:result.user?.displayName
-            }
-            axiosPublic.post("/users",userInfo)
-            .then(res=>{
-                console.log(res.data);
-                navigate("/")
-            })
+const Sociallogin = () => {
+    const navigate = useNavigate();
+
+    const {googlelogin} = useContext(AuthContext);
+    const handlesociallogin = ()=>{
+        googlelogin()
+        .then(res=>{
+            console.log(res.user)
+            navigate('/dashboard/emphome')
+
+        })
+        .catch(err=>{
+            console.log(err)
         })
     }
-
-  return (
-    <div className=" p-2">
-        <div className="divider"></div>
-      <div className=" text-center">
-        <button onClick={handleGoogleSignIn} className="btn">
-         <FaGoogle className=" mr-2"></FaGoogle>
-         Google
-        </button>
-      </div>
-    </div>
-  );
+    return (
+        <div>
+              <div className="divider"></div> 
+             <p className="p-5 text-center ">Login with Google <button onClick={handlesociallogin} className="btn"><FaGoogle></FaGoogle></button></p>
+        </div>
+    );
 };
 
-export default SocialLogin;
+export default Sociallogin;
