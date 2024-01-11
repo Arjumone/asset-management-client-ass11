@@ -1,11 +1,10 @@
 import { useContext } from "react";
-// import { FaGoogle } from "react-icons/fa";
 import Swal from "sweetalert2";
 import Useaxiouspublic from "../../Axious/Useaxiouspublic";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/Authprovider";
-// import Sociallogin from ".";
 import { Helmet } from "react-helmet-async";
+import Sociallogin from "../../components/SocialLogin/SocialLogin";
 
 
 const JoinAsadmin = () => {
@@ -123,7 +122,7 @@ const JoinAsadmin = () => {
     <div className="form-control mt-6">
       <button className="btn btn-primary">Join as Admin</button>
     </div>
-  {/* < <Sociallogin></Sociallogin>> */}
+  <Sociallogin></Sociallogin>
   </form>
 </div>
 </div>

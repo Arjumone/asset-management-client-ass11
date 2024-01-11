@@ -1,9 +1,7 @@
 import { useContext } from "react";
-// import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from "../../Provider/Authprovider";
 import useEmploye from "../../Hook/useEmploye";
 import { useNavigate } from "react-router-dom";
-// import Sociallogin from "../Sociallogin/Sociallogin";
 import { Helmet } from "react-helmet-async";
 import Sociallogin from "../../components/SocialLogin/SocialLogin";
 
@@ -65,7 +63,6 @@ const Login = () => {
     <div className="form-control mt-6">
       <button className="btn btn-primary">LogIn</button>
     </div>
-    {/* <Sociallogin></Sociallogin> */}
     <Sociallogin></Sociallogin>
   </form>
 </div>

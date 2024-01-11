@@ -7,7 +7,6 @@ import { app } from "../Firebase/Firebase.config";
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
 const gprovider = new GoogleAuthProvider();
-// eslint-disable-next-line react/prop-types
 const Authprovider = ({children}) => {
 
     const [user,setuser] = useState();

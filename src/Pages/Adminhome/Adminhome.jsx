@@ -5,7 +5,7 @@ import useReqasset from "../../Hook/useReqasset";
 const Adminhome = () => {
    const [assetreq] = useReqasset();
    const [asset] = useAsset();
-//    console.log(asset)
+   console.log(asset)
 //    top req item
 if (!Array.isArray(assetreq)) {
     return null; 

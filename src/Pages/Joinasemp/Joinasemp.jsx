@@ -1,12 +1,11 @@
-// import { FaGoogle } from "react-icons/fa";
-// import  { AuthContext } from '../../Authprovider/Authprovider';
+
 import { useContext } from "react";
 import Useaxiouspublic from "../../Axious/Useaxiouspublic";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-// import Sociallogin from "../Sociallogin/Sociallogin";
 import { Helmet } from "react-helmet-async";
 import { AuthContext } from "../../Provider/Authprovider";
+import Sociallogin from "../../components/SocialLogin/SocialLogin";
 
 const Joinasemp = () => {
   const { createnewuser, updateuserprofile } = useContext(AuthContext);
@@ -125,7 +124,7 @@ const Joinasemp = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Join as Employee</button>
               </div>
-              {/* <Sociallogin></Sociallogin> */}
+            <Sociallogin></Sociallogin>
             </form>
           </div>
         </div>

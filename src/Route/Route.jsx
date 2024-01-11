@@ -1,31 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
-// import Home from "../Pages/Home";
-// // import Errorpage from "../Shared/Errorpage";
-// import Joinasemp from "../Pages/Joinasemp/Joinasemp";
-// import Dashboard from "../Pages/Dashboard";
-// import Emphome from "../Pages/Dashboard/Emphome";
-// import Myassets from "../Pages/Dashboard/Myassets";
-// import Reqforasset from "../Pages/Dashboard/Reqforasset";
-// import Customasset from "../Pages/Dashboard/Customasset";
-// import Profile from "../Pages/Dashboard/Profile";
-// import Myteam from "../Pages/Dashboard/Myteam";
 import Login from "../Pages/Login/Login";
-// import Updateprofile from "../Pages/Updateprofile/Updateprofile";
-// import Updatecustomview from "./Updatecustomview/Updatecustomview";
-// import Updateview from "./Updateview/Updateview";
-// import JoinAsadmin from "../Pages/JoinAsadmin/JoinAsadmin";
-// import Adminhome from "../Pages/AdminHome/Adminhome";
-// import Aassetlist from "../Pages/AdminHome/AassetList/Aassetlist";
-// import Aaddanasset from "../Pages/Aaddanasset/Aaddanasset";
-// import Aallreq from "../Pages/Aallreq/Aallreq";
-// import Acustomreqlist from "../Pages/Aallreq/Acustomreqlist/Acustomreqlist";
-// import Aemployelist from "../Pages/Aallreq/Acustomreqlist/Aemployelist/Aemployelist";
-// import Aaddanemploye from "../Pages/Aallreq/Acustomreqlist/Aemployelist/Aaddanemploye/Aaddanemploye";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../Pages/Home";
 import Joinasemp from "../Pages/Joinasemp/Joinasemp";
-import JoinAsadmin from "../Pages/JoinAsadmin/JoinAsadmin";
 import Emphome from "../Pages/Dashboard/Emphome";
 import Myassets from "../Pages/Dashboard/Myassets";
 import Myteam from "../Pages/Dashboard/Myteam";
@@ -43,6 +21,7 @@ import Aallreq from "../Pages/Aallreq/Aallreq";
 import Acustomreqlist from "../Pages/Aallreq/Acustomreqlist/Acustomreqlist";
 import Aemployelist from "../Pages/Aallreq/Acustomreqlist/Aemployelist/Aemployelist";
 import Aaddanemploye from "../Pages/Aallreq/Acustomreqlist/Aemployelist/Aaddanemploye/Aaddanemploye";
+import JoinAsadmin from "../Pages/JoinAsAdmin/JoinAsAdmin";
 
 const router = createBrowserRouter([
   {
@@ -102,14 +81,16 @@ const router = createBrowserRouter([
         path: "updateprofile/:id",
         element: <Updateprofile></Updateprofile>,
         loader: ({ params }) =>
-          fetch(`https://assignment12-psi.vercel.app/employee/${params.id}`),
+          fetch(
+            `https://asset-management-system-server-sigma.vercel.app/employee/${params.id}`
+          ),
       },
       {
         path: "updatecustomview/:id",
         element: <Updatecustomview></Updatecustomview>,
         loader: ({ params }) =>
           fetch(
-            `https://assignment12-psi.vercel.app/customreqassetreq/${params.id}`
+            `https://asset-management-system-server-sigma.vercel.app/customreqassetreq/${params.id}`
           ),
       },
       {
@@ -117,7 +98,7 @@ const router = createBrowserRouter([
         element: <Updateview></Updateview>,
         loader: ({ params }) =>
           fetch(
-            `https://assignment12-psi.vercel.app/customreqassetreq/${params.id}`
+            `https://asset-management-system-server-sigma.vercel.app/customreqassetreq/${params.id}`
           ),
       },
       // admin

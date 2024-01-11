@@ -1,98 +1,123 @@
- [
+[
   {
-    "_id": 1,
-    "asset_name": "laptop",
-    "asset_type": "returnable",
-    "asset_quantity": 5,
-    "availability": "available",
-    "asset_price": 799.99
+      "_id": 1,
+      "assetName": "laptop",
+      "assetType": "returnable",
+      "quantity": 5,
+      "status": "Available",
+      "Price": 799.99,
+      "image": "https://i.ibb.co/YdMCjqK/laptop-with-blank-black-screen-white-table-53876-97915.jpg",
+      "requesteddate": "2024-01-11",
+      "whyneedthis": "For development purposes"
   },
   {
-    "_id": 2,
-    "asset_name": "cell phone",
-    "asset_type": "returnable",
-    "asset_quantity": 10,
-    "availability": "out_of_stock",
-    "asset_price": 499.99
+      "_id": 2,
+      "assetName": "cell phone",
+      "assetType": "returnable",
+      "quantity": 10,
+      "status": "out_of_stock",
+      "Price": 499.99,
+      "image": "https://i.ibb.co/mqVjvgx/realistic-phones-different-views-52683-28436.jpg",
+      "requesteddate": "2024-01-15",
+      "whyneedthis": "Business communication"
   },
   {
-    "_id": 3,
-    "asset_name": "keyboard",
-    "asset_type": "returnable",
-    "asset_quantity": 8,
-    "availability": "available",
-    "asset_price": 49.99
+      "_id": 3,
+      "assetName": "keyboard",
+      "assetType": "returnable",
+      "quantity": 8,
+      "status": "Available",
+      "Price": 49.99,
+      "image": "https://i.ibb.co/cgBb3yd/wireless-mouse-keyboard-1260-15.jpg",
+      "requesteddate": "2024-01-20",
+      "whyneedthis": "Office use"
   },
   {
-    "_id": 4,
-    "asset_name": "pens",
-    "asset_type": "non_returnable",
-    "asset_quantity": 15,
-    "availability": "available",
-    "asset_price": 2.99
+      "_id": 4,
+      "assetName": "pens",
+      "assetType": "non_returnable",
+      "quantity": 15,
+      "status": "Available",
+      "Price": 2.99,
+      "image": "https://i.ibb.co/mFfygLc/colored-pencils-school-black-background-ai-generative-123827-23985.jpg",
+      "requesteddate": "2024-01-23",
+      "whyneedthis": "Note-taking"
   },
   {
-    "_id": 5,
-    "asset_name": "chair",
-    "asset_type": "returnable",
-    "asset_quantity": 3,
-    "availability": "out_of_stock",
-    "asset_price": 199.99
+      "_id": 5,
+      "assetName": "chair",
+      "assetType": "returnable",
+      "quantity": 3,
+      "status": "out_of_stock",
+      "Price": 199.99,
+      "image": "https://i.ibb.co/XVqMJBm/different-colorful-chairs-armchairs-illustration-74855-18296.jpg",
+      "requesteddate": "2024-01-2",
+      "whyneedthis": "Office seating"
   },
   {
-    "_id": 6,
-    "asset_name": "paper",
-    "asset_type": "non_returnable",
-    "asset_quantity": 20,
-    "availability": "available",
-    "asset_price": 9.99
+      "_id": 6,
+      "assetName": "paper",
+      "assetType": "non_returnable",
+      "quantity": 20,
+      "status": "Available",
+      "Price": 9.99,
+      "image": "https://i.ibb.co/MghqXQT/realistic-thumbtack-pins-collection-with-notes-52683-78551.jpg",
+      "requesteddate": "2024-01-09",
+      "whyneedthis": "Printing"
   },
   {
-    "_id": 7,
-    "asset_name": "mouse",
-    "asset_type": "returnable",
-    "asset_quantity": 6,
-    "availability": "available",
-    "asset_price": 29.99
+      "_id": 7,
+      "assetName": "mouse",
+      "assetType": "returnable",
+      "quantity": 6,
+      "status": "Available",
+      "Price": 29.99,
+      "image": "https://i.ibb.co/482RMSj/purple-computer-mouse-1260-11.jpg",
+      "requesteddate": "2024-01-30",
+      "whyneedthis": "Computer usage"
   },
   {
-    "_id": 8,
-    "asset_name": "diaries",
-    "asset_type": "non_returnable",
-    "asset_quantity": 12,
-    "availability": "available",
-    "asset_price": 14.99
+      "_id": 8,
+      "assetName": "diaries",
+      "assetType": "non_returnable",
+      "quantity": 12,
+      "status": "Available",
+      "Price": 14.99,
+      "image": "https://i.ibb.co/1LYMm3Y/having-relaxing-time-beach-1101-207.jpg",
+      "requesteddate": "2024-01-11",
+      "whyneedthis": "Journaling"
   },
   {
-    "_id": 9,
-    "asset_name": "tissue paper",
-    "asset_type": "non_returnable",
-    "asset_quantity": 25,
-    "availability": "out_of_stock",
-    "asset_price": 4.99
+      "_id": 9,
+      "assetName": "tissue paper",
+      "assetType": "non_returnable",
+      "quantity": 25,
+      "status": "out_of_stock",
+      "Price": 4.99,
+      "image": "https://i.ibb.co/dpKBGtM/human-hand-pulls-napkin-out-box-220873-3247.jpg",
+      "requesteddate": "2024-01-16",
+      "whyneedthis": "Hygiene"
   },
   {
-    "_id": 10,
-    "asset_name": "desk",
-    "asset_type": "returnable",
-    "asset_quantity": 2,
-    "availability": "available",
-    "asset_price": 299.99
+      "_id": 10,
+      "assetName": "desk",
+      "assetType": "returnable",
+      "quantity": 2,
+      "status": "Available",
+      "Price": 299.99,
+      "image": "https://i.ibb.co/HV7Fs2J/elegant-cozy-office-space-23-2149548666.jpg",
+      "requesteddate": "2024-01-22",
+      "whyneedthis": "Workspace"
   },
   {
-    "_id": 11,
-    "asset_name": "pencils",
-    "asset_type": "non_returnable",
-    "asset_quantity": 18,
-    "availability": "available",
-    "asset_price": 3.99
-  },
-  {
-    "_id": 12,
-    "asset_name": "keyboard",
-    "asset_type": "returnable",
-    "asset_quantity": 7,
-    "availability": "out_of_stock",
-    "asset_price": 39.99
+      "_id": 11,
+      "assetName": "pencils",
+      "assetType": "non_returnable",
+      "quantity": 18,
+      "status": "Available",
+      "Price": 3.99,
+      "image": "https://i.ibb.co/YysbTts/back-school-1361-293.jpg",
+      "requesteddate": "2024-01-03",
+      "whyneedthis": "Drawing"
   }
 ]

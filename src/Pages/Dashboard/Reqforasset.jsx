@@ -28,7 +28,7 @@ const Reqforasset = () => {
             const username = user?.displayName;
             const useremail = user?.email;
             const quantity = allasset.quantity;
-            // console.log(inputtest,requestdate,useremail,username,RequestStatus,quantity)
+            console.log(inputtest,requestdate,useremail,username,RequestStatus,quantity)
             const reqasset = {
               assetName : allasset.assetName,
               assetType : allasset.assetType,        
